@@ -10,6 +10,10 @@ public class Car {
     int maxFuel;
     int currentFuel;
     int consumption;
+    
+    private int seats;
+    
+    private int passengers = 1;
 
     private double mileage;
 
@@ -30,8 +34,19 @@ public class Car {
         this.currentFuel = 0;
         this.consumption = 0;
         this.mileage = 0;
+        this.passengers = 1;
 
     }
+
+    public int getPassengers() {
+        return passengers;
+    }
+
+    public void setPassengers(int passengers) {
+        this.passengers = passengers;
+    }
+    
+    
 
     public Car(double mileage, String model) {
     }
@@ -142,5 +157,24 @@ public class Car {
             System.out.println("Rezervoar je pun. Sipali ste: " + (refill - emptySpace) );
   
     }
+    }
+    
+    public void getIn() {
+    // 1 osoba je usla u vozilo
+    
+    
+    
+    } 
+    
+    public void getIn(int numberOfPeople) {
+    // numberOfPeople osoba je uslo u vozilo
+    }
+    
+    public void getOut () {
+        //1 osoba je izasla iz vozila
+    }
+    
+    public void getOut (int numberOfPeople) {
+        //numberOfPeople osoba je izasla iz vozila
     }
 }
