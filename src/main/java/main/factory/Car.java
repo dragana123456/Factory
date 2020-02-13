@@ -1,9 +1,8 @@
-
 package main.factory;
 
-
 public class Car {
-    
+
+    private final String vehicleType = "car";
     private String model;
     int buildYear;
     private int maxSpeed;
@@ -11,47 +10,52 @@ public class Car {
     int maxFuel;
     int currentFuel;
     int consumption;
-    
-   
-    
-    public Car () {
+
+    public Car() {
         this.model = "";
         this.buildYear = 0;
         this.maxSpeed = 0;
         this.color = "";
         this.maxFuel = 0;
         this.currentFuel = 0;
-        this.consumption = 0; 
-    
+        this.consumption = 0;
+
     }
-      
-    public String getModel () {
-        return this.model;   
+
+    public String getVehicleType() {
+        return this.vehicleType;
     }
-    public void setModel (String model) {
+
+    public String getModel() {
+        return this.model;
+    }
+
+    public void setModel(String model) {
         this.model = model;
     }
-    
-    public int getbuildYear (){
+
+    public int getbuildYear() {
         return this.buildYear;
     }
-    
-    public void setbuildYear (int buildYear) {
+
+    public void setbuildYear(int buildYear) {
         this.buildYear = buildYear;
     }
-        
-    public int getMaxSpeed () {
+
+    public int getMaxSpeed() {
         return this.maxSpeed;
-    }  
-    public void setMaxSpeed (int maxSpeed) {
+    }
+
+    public void setMaxSpeed(int maxSpeed) {
         this.maxSpeed = maxSpeed;
     }
-    
-    public String getColor () {
+
+    public String getColor() {
         return this.color;
     }
+
     public void setColor(String color) {
-        this.color = color;  
+        this.color = color;
     }
 
     public int getBuildYear() {
@@ -85,8 +89,8 @@ public class Car {
     public void setConsumption(int consumption) {
         this.consumption = consumption;
     }
-    
-    public void showData () {
+
+    public void showData() {
         System.out.println("Model: " + this.getModel());
         System.out.println("Godina proizvodnje :" + this.getBuildYear());
         System.out.println("Boja :" + this.color);
@@ -94,7 +98,9 @@ public class Car {
         System.out.println("Stanje rezervoara :" + this.consumption);
         System.out.println("Kapacitet rezervoara je :" + this.getMaxFuel());
         System.out.println("Maksimalna brzina :" + this.maxSpeed);
-    
+
+    }
+    public void travel () {
+        
     }
 }
-

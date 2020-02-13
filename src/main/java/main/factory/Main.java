@@ -45,7 +45,9 @@ public class Main {
 
         fiat.showData();
         
-        
+       Car opel = new Car();
+        opel.showData();
+         
 
     }
 
