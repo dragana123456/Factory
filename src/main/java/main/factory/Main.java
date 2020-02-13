@@ -45,10 +45,15 @@ public class Main {
 
         fiat.showData();
         
-       Car opel = new Car();
-        opel.showData();
-         
-
-    }
-
+        Car opel = new Car(12.22, "Astra");      
+        
+        System.out.println("********************************");
+        
+     fiat.fuelUp(12);
+     
+        
+       
+        
+       
+}
 }
